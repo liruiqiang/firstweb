@@ -38,6 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'block',
+    'article',
+    'activate',
+    'comment',
+    'message',
 ]
 
 MIDDLEWARE = [
@@ -109,7 +113,7 @@ STATICFILES_DIRS = (
 
 LANGUAGE_CODE = 'zh-hans'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
@@ -122,3 +126,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+EMAIL_USE_SSL = True
+EMAIL_HOST = "smtp.qq.com"
+EMAIL_PORT = 465
+EMAIL_HOST_USER = "19309649@qq.com"
+EMAIL_HOST_PASSWORD="fnbfelfrsxnqbgic"
+DEFAULT_FROM_EMAIL="19309649@qq.com"
+
+
+LOGIN_REDIRECT_URL="/"
